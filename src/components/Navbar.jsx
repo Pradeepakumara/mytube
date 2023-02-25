@@ -1,9 +1,10 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Avatar, Stack } from "@mui/material";
 // import { logo } from "../utils/constants";
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import BrandLogo from '../assets/brand_logo2.png'
+import Profile from '../assets/profile.JPG'
 
 const Navbar = () => (
   <Stack
@@ -21,6 +22,10 @@ const Navbar = () => (
       <img src={BrandLogo} alt="logo" height={45} />
     </Link>
     <SearchBar />
+    <a href="https://personalpradeepprofile.netlify.app/">
+    <Avatar alt="Remy Sharp" src={Profile}   />
+    </a>
+    {/* sx={{ width: 56, height: 56 }} */}
   </Stack>
 );
 
